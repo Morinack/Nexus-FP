@@ -17,7 +17,7 @@
 
 '''
 This script parses the output of "show vlan brief" and converts the
-vlans to mode FabricPath based on this data
+vlans captured to mode FabricPath
 
 It will convert all active VLANs to mode FabricPath.
 
@@ -105,4 +105,5 @@ for idx, line in enumerate(all_device_lines):
 
 # cli("show vlan brief | include act")
 
-	
+cli("term length 0")
+clip("show vlan | begin Vlan-mode")
