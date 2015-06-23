@@ -66,6 +66,10 @@ VLAN Name                             Status    Ports
 13   VLAN0013                         active    
 
 '''
+
+cli("install feature-set fabricpath")
+cli("feature-set fabricpath")
+
 # Execute the command on the switch
 
 raw_input = cli("show vlan brief | include act")
