@@ -107,3 +107,4 @@ for idx, line in enumerate(all_device_lines):
 
 cli("term length 0")
 clip("show vlan | begin Vlan-mode")
+cli("term length 50")
